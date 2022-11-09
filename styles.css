@@ -1,0 +1,138 @@
+body {
+    background-color: #202124;
+    color: #fff;
+    height: 100vh;
+    font-family: arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    height: 10vh;
+    width: 30%;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+}
+.content {
+    height: 90vh;
+}
+
+h1 {
+    font-size: 70px;
+}
+
+form {
+    width: 100%;
+}
+
+form, .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.query {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.advanced-query, form > h3, form > p {
+    width: 100%;
+    padding-left: 10vw;
+}
+
+.advanced-query label{
+    display: inline-block;
+    width: 15%;
+}
+
+label[for="hi_num"] {
+    width: fit-content;
+}
+
+#lo_num, #hi_num {
+    width: 20%;
+    border-radius: 0;
+}
+
+input {
+    margin: 5px;
+    font-size: 16px;
+    background-color: transparent;
+    padding-left: 15px;
+}
+
+input:focus {
+    outline: none;
+    padding-left: 15px;
+}
+
+.advanced-query input[type="text"] {
+    border-radius: 0;
+    height: 30px;
+}
+
+input[type="text"] {
+    border-radius: 20px;
+    border: 1px solid #5f6368;
+    color: #e8eaed;
+    max-width: 600px;
+    height: 50px;
+    width: 70%;
+    font-size: 16px;
+}
+
+input[type="submit"] {
+    height: 40px;
+    min-width: 15px;
+    color: #e8eaed;
+    background-color: #303134;
+    border: 1px solid #303134;
+    margin: 10px 5px;
+    padding: 0 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.advanced-submit {
+    background-color: #8ab4f8 !important;
+    color: #fff;
+    margin-left: 10vw !important;
+}
+
+/* Mobile responsive */
+
+@media (max-width: 600px) {
+    .navbar {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar a {
+        display: inline-block;
+        height: 25px;
+        width: 70%;
+    }
+
+    .advanced-query {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .advanced-query label {
+        width: 100%;
+    }
+
+    .advanced-submit {
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+}
